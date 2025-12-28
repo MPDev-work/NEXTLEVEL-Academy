@@ -20,6 +20,9 @@ body {
   /* color */
   --primary-color: #198754;
   --primary-tint: rgb(214, 255, 236);
+  /*  */
+  /* --primary-color: #ffc107; */
+  /* --primary-tint: #ffecb4; */
   --grey-base: rgb(50, 50, 50);
   --grey-tint: rgb(75, 75, 75);
   --grey-shade: rgb(25, 25, 25);
@@ -419,7 +422,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   gap: 12px;
   box-shadow: 0 0 10px rgba(25, 135, 84, 0.1);
   transition: 0.2s ease-out;
@@ -430,10 +433,11 @@ input::placeholder {
   object-fit: contain;
 }
 .development-card-btn {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
   gap: 10px;
 }
 /* benefit */
@@ -708,8 +712,16 @@ footer {
 .footer-mid {
   position: absolute;
   left: calc(50% - 98px);
+  color: var(--primary-color);
 }
 .footer-right {
   position: absolute;
   right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right p {
+  color: var(--primary-color);
 }
